@@ -1,0 +1,51 @@
+/* Reset default CSS styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-size: 62.5%;
+}
+/* Variables */
+:root {
+    /* Colors */
+    --color-primary-yellow: #FECB00;
+    --color-primary-blue: #005293;
+    --color-seconday-yellow: #FFD481;
+    --color-seconday-blue: #1A3050;
+    --color-white: #FAFAFA;
+    --color-dark: #142638;
+    --color-shade-1: #EDEDED;
+    --color-shade-1: #BDBDBD;
+    --color-shade-1: #757575;
+    --color-shade-1: #424242;
+    /* Font size */
+    --fs-h1: 6rem;
+    --fs-h2: 4.8rem;
+    --fs-h3: 4rem;
+    --fs-h4: 3rem;
+    --fs-h5: 2rem;
+    --fs-p: 1.6rem;
+    /* Font weight */
+    --fw-bold: 700;
+    --fw-normal: 400;
+    /* Fonts */
+    --f-regular: "Sweden Sans Regular", Arial, sans-serif;
+    --f-bold: "Sweden Sans Bold", Arial, sans-serif;
+}
+/* Set font */
+@font-face {
+    font-family: "Sweden Sans Regular";
+    src: url("./assets/fonts/SwedenSansRegular.woff2") format('woff');
+}
+@font-face {
+    font-family: "Sweden Sans Bold";
+    src: url("./assets/fonts/SwedenSansBold.woff2") format('woff');
+}
+/* Set background-color and font-family */
+html {
+    background-color: var(--color-dark);
+    font-family: var(--f-regular);
+}
