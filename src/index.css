@@ -18,9 +18,9 @@ html, body {
     --color-white: #FAFAFA;
     --color-dark: #142638;
     --color-shade-1: #EDEDED;
-    --color-shade-1: #BDBDBD;
-    --color-shade-1: #757575;
-    --color-shade-1: #424242;
+    --color-shade-2: #BDBDBD;
+    --color-shade-3: #757575;
+    --color-shade-4: #424242;
     /* Font size */
     --fs-h1: 6rem;
     --fs-h2: 4.8rem;
@@ -44,7 +44,7 @@ html, body {
     font-family: "Sweden Sans Bold";
     src: url("./assets/fonts/SwedenSansBold.woff2") format('woff');
 }
-/* Set background-color and font-family */
+/* Set background-color and font-family  */
 html {
     background-color: var(--color-dark);
     font-family: var(--f-regular);
