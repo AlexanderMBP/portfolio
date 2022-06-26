@@ -3,12 +3,17 @@ import logo from '../../assets/icons/logo.svg'
 import github from '../../assets/icons/github.svg'
 import linkedin from '../../assets/icons/linkedin.svg'
 import mail from '../../assets/icons/mail.svg'
+import { useState } from 'react';
 
 function Navbar() {
+    const [menu,setMenu] = useState(false);
+    function handleOnClick () {
+        setMenu(!menu)
+    }
   return (
     <nav className='navbar'>
         <img src={logo} alt="Ambp logo" className='navbar__logo' />
-        <ul className="navbar__list">
+        <ul className={"navbar__list" + (menu ? " navbar__list-active" : "")}>
             <li className="navbar__links">
                 <a href="#Home" aria-label="Home section link" aria-hidden="true" className="navbar__link">
                     <h3 className="navbar__link-h3">Home</h3>
@@ -25,7 +30,7 @@ function Navbar() {
                 </a>
             </li>
         </ul>
-        <div className="navbar__social">
+        <div className={"navbar__social" + (menu ? " navbar__social-active" : "")}>
             <a href="https://github.com/AlexanderMBP" target="_blank" rel="noopener noreferrer" aria-label="Github link" aria-hidden="true" className="navbar__social-link">
                 <img src={github} alt="Github logo" className='navbar__social-github-img' />
             </a>
@@ -35,6 +40,11 @@ function Navbar() {
             <a href="mailto:AlexanderMBP@iCloud.com"  aria-label="Mail to AlexanderMBP@iCloud.com" aria-hidden="true" className="navbar__social-link">
                 <img src={mail} alt="Mail logo" className='navbar__social-mail-img' />
             </a>
+        </div>
+        <div className="navbar__toggle" onClick={handleOnClick}>
+            <span className={"navbar__toggle-line" + (menu ? " active" : "")}></span>
+            <span className={"navbar__toggle-line" + (menu ? " active" : "")}></span>
+            <span className={"navbar__toggle-line" + (menu ? " active" : "")}></span>
         </div>
     </nav>
   );
