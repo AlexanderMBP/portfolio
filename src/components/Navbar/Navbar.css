@@ -54,7 +54,6 @@
 /* Navbar toggle */
 .navbar__toggle {
     display: none;
-    height: 100%;
     flex-direction: column;
     margin-right: 15.6rem;
     cursor: pointer;
@@ -84,9 +83,13 @@
 
 /* Navbar responsive */
 @media only screen and (max-width: 1200px) {
+.navbar-active {
+    height: 100vh;
+    align-items: flex-start;
+}
 .navbar__list {
     position: absolute;
-    top: -40%;
+    top: -50%;
     left: 50%;
     flex-direction: column;
     transform: translateX(-50%);
@@ -118,5 +121,7 @@
 }
 .navbar__toggle {
     display: flex;
+    justify-content: center;
+    height: 18%;
 }
 }

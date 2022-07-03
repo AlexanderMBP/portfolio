@@ -11,7 +11,7 @@ function Navbar() {
         setMenu(!menu)
     }
   return (
-    <nav className='navbar'>
+    <nav className={"navbar" + (menu ? " navbar-active" : "")}>
         <img src={logo} alt="Ambp logo" className='navbar__logo' />
         <ul className={"navbar__list" + (menu ? " navbar__list-active" : "")}>
             <li className="navbar__links">

@@ -1,0 +1,39 @@
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15.6rem 12.5%;
+}
+/* Hero body */
+.hero__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Hero Text */
+.hero__text {
+    margin-right: 8%;
+}
+.hero__text-primary {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-bold);
+    color: var(--color-primary-yellow);
+    white-space: nowrap;
+}
+.hero__text-secondary {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-normal);
+    color: var(--color-white);
+}
+.hero__text-muted {
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-normal);
+    color: var(--color-shade-3);
+}
+/* Hero img */
+.hero__img {
+    width: 28%;
+    height: auto;
+}
