@@ -15,7 +15,7 @@ function Navbar() {
         <img src={logo} alt="Ambp logo" className='navbar__logo' />
         <ul className={"navbar__list" + (menu ? " navbar__list-active" : "")}>
             <li className="navbar__links">
-                <a href="#Home" aria-label="Home section link" aria-hidden="true" className="navbar__link">
+                <a href="#home" aria-label="Home section link" aria-hidden="true" className="navbar__link">
                     <h3 className="navbar__link-h3">Home</h3>
                 </a>
             </li>
@@ -25,7 +25,7 @@ function Navbar() {
                 </a>
             </li>
             <li className="navbar__links">
-                <a href="#mywork" aria-label="My work section link" aria-hidden="true" className="navbar__link">
+                <a href="#myWork" aria-label="My work section link" aria-hidden="true" className="navbar__link">
                     <h3 className="navbar__link-h3">My work</h3>
                 </a>
             </li>

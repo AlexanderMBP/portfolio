@@ -14,7 +14,7 @@ function Hero() {
             </div>
             <img className='hero__img' src={keyboard} alt="Keyboard" />
         </div>
-        <Button content='See my work' icon={arrow} iconAlt='Arrow icon' href='#mywork'/>
+        <Button content='See my work' icon={arrow} iconAlt='Arrow icon' href='#myWork'/>
     </div>
   );
 }
