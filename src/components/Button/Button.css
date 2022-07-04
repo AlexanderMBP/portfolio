@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     padding: 2rem 4rem;
-    margin-top: 10%;
+    margin-top: 16%;
     border: none;
     border-radius: 2rem;
     background: linear-gradient(90deg, var(--color-primary-yellow), var(--color-secondary-yellow));

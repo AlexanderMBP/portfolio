@@ -14,7 +14,7 @@
 }
 /* Hero Text */
 .hero__text {
-    margin-right: 8%;
+    margin-right: 18%;
 }
 .hero__text-primary {
     font-size: var(--fs-h1);
