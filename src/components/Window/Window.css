@@ -1,0 +1,42 @@
+/* Window */
+.window {
+    width: 80%;
+}
+/* Window header */
+.window__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-shade-2);
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+/* Header semaphore */
+.header__semaphore {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    margin-left: 1.5rem;
+}
+.semaphore {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin: 1.5rem 0;
+}
+.semaphore:first-of-type {
+    background-color: #F66153;
+}
+.semaphore:nth-of-type(2) {
+    background-color: #F7C023;
+}
+.semaphore:nth-of-type(3){
+    background-color: #2FCA41;
+}
+/* Header title */
+.header__title {
+    margin-left: 41%;
+    font-size: var(--fs-h5);
+    font-weight: var(--fw-normal);
+    color: var(--color-shade-4);
+}
