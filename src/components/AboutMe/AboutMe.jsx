@@ -3,8 +3,8 @@ import './AboutMe.css';
 
 function AboutMe() {
   return (
-    <div className="aboutMe" id='aboutMe'>
-        <Window/>
+    <div className="aboutMe">
+      <Window/>
     </div>
   );
 }
